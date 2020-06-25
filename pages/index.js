@@ -6,11 +6,13 @@ import LazyLoad from 'react-lazyload';
 
 import Test from './test'
 
-import Layout from './layout';
+import Layout from '../components/layout';
  
 
 const  Homepage = ({data})=> {
   const [newsData, setData] = useState(data)
+   
+  
 
   useEffect(() => {
     async function loadData(){
@@ -31,6 +33,8 @@ const  Homepage = ({data})=> {
       <h1>home</h1>
       <Test />
       <Link href={`/subpages?page=home`}><a>Sub Pages</a></Link>
+       
+      <Link href={`/posts/[id]`} as="/posts/1"><a>posts</a></Link>
       { newsData && newsData.top_news ? newsData.top_news.map(news=>{
          return(
            <div> 
@@ -100,6 +104,8 @@ Homepage.getInitialProps = async function(ctx){
   }
   const res = await fetch('https://zeenews.india.com/pwaapi/home.php')
   const data = await res.json()
+  console.log('data from intial props', data);
+  
     return {
       data
     }

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import {useEffect, useState} from 'react';
 import fetch from 'isomorphic-unfetch'
-import Layout from './layout';
+import Layout from '../components/layout';
 
 const  Blog = ({data})=> {
   const [newsData, setData] = useState(data)

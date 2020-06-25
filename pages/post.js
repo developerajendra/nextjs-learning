@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Nav from '../components/nav'
 import fetch from 'isomorphic-unfetch'
-import Layout from './layout';
+import Layout from '../components/layout';
 
 const  Post = ({data})=> {
   console.log('props', data);
@@ -25,15 +25,9 @@ const  Post = ({data})=> {
   // This function gets called at build time on server-side.
   // It won't be called on client-side, so you can even do
   // direct database queries. See the "Technical details" section.
-  export async function getStaticProps( ctx) {
+  export async function getServerSideProps( ctx) {
 
-    if(!ctx.req){
-      return {
-        props: {
-          data:[],
-        },
-      }
-    }
+    
 
     // Call an external API endpoint to get posts.
     // You can use any data fetching library

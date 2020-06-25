@@ -1,6 +1,6 @@
 
 import {withRouter} from 'next/router';
-import Layout from './layout';
+import Layout from '../components/layout';
 import {useEffect, useState} from 'react';
 
 

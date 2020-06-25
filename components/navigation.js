@@ -4,9 +4,9 @@ const  Navigation = ()=>{
     return <div>
         <nav>
             <ul>
-                <li> <Link href="/"><a href="">Home Page</a></Link></li>
+                <li> <Link prefetch={false} href="/"><a href="">Home Page</a></Link></li>
                 <li><Link href="/blog"><a href="">Blog Page</a></Link></li>
-                <li><Link href="/photolist"><a href="">PhotoList Page</a></Link></li>
+                <li><Link prefetch={false} href="/photolist"><a href="">PhotoList Page</a></Link></li>
                 <li><Link href="/post"><a href="">Post Page</a></Link></li>
             </ul>
         

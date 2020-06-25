@@ -2,7 +2,7 @@ import Link from 'next/link';
 import fetch from 'isomorphic-unfetch'
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-import Layout from './layout';
+import Layout from '../components/layout';
 
 const  PhotoLit = ({data})=> {
   console.log('props', data);

@@ -5,8 +5,6 @@ import LazyLoad from 'react-lazyload';
 import Layout from '../components/layout';
 
 const  PhotoLit = ({data})=> {
-  console.log('props', data);
-   
   
   return <Layout>
      
@@ -35,7 +33,6 @@ const  PhotoLit = ({data})=> {
     // You can use any data fetching library
     const res =  await fetch('https://zeenews.india.com/pwaapi/photolist.php')
     const data = await res.json()
-    console.log('static props');
     
   
     // By returning { props: posts }, the Blog component

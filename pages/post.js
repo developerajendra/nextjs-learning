@@ -4,9 +4,6 @@ import fetch from 'isomorphic-unfetch'
 import Layout from '../components/layout';
 
 const  Post = ({data})=> {
-  console.log('props', data);
-   
-  
   return <Layout>
       <section>
         <h1>Welcome to POST page</h1>
@@ -33,7 +30,6 @@ const  Post = ({data})=> {
     // You can use any data fetching library
     const res =  await fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
     const data = await res.json()
-    console.log('static props');
     
   
     // By returning { props: posts }, the Blog component

@@ -104,7 +104,6 @@ Homepage.getInitialProps = async function(ctx){
   }
   const res = await fetch('https://zeenews.india.com/pwaapi/home.php')
   const data = await res.json()
-  console.log('data from intial props', data);
   
     return {
       data

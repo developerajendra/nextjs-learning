@@ -1,5 +1,5 @@
-
 export const register = ()=>{
+    console.log('hello');
 
 
 const staticCacheName = 'site-stattic-v2';

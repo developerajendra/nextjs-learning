@@ -5,7 +5,6 @@ import {useEffect, useState} from 'react';
 
 
 const SubPages = withRouter((props)=>{
-    console.log('dynamic router', props.router.query.page);
 
     const [newsData, setData] = useState();
 
@@ -13,7 +12,6 @@ const SubPages = withRouter((props)=>{
       async function loadData(){
           const res = await fetch(`https://zeenews.india.com/pwaapi/newsdetail.php?newsid=${props.router.query.page}`);
           const newsData = await res.json()
-          console.log('newsData', newsData);
           
           setData(newsData);
       }

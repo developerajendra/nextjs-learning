@@ -50,7 +50,7 @@ const  Blog = ({data})=> {
     // You can use any data fetching library
     const res =  await fetch('https://zeenews.india.com/pwaapi/latestnews.php')
     const data = await res.json()
-    console.log('static props');
+     
     
   
     // By returning { props: posts }, the Blog component

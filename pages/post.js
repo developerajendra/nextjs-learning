@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Nav from '../components/nav'
 import fetch from 'isomorphic-unfetch'
 import Layout from '../components/layout';
 

@@ -124,10 +124,10 @@ define("./service-worker.js",['./workbox-b90066a8'], function (workbox) { 'use s
     "revision": "82dca635a629d8ab38c3ad85b2ad65a2"
   }, {
     "url": "/_next/static/runtime/webpack.js",
-    "revision": "4a9e268bff98d63cd25f00a4995abeed"
+    "revision": "98d14f51da3bf526d88ed541c5b5bffb"
   }, {
     "url": "/_next/static/runtime/webpack.js.map",
-    "revision": "d82d3ebad604954107e9a4d5acec8be8"
+    "revision": "62a8b961872897a1bb7d27fcf77b375c"
   }], {
     "ignoreURLParametersMatching": [/ts/]
   });
